@@ -1,0 +1,459 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F9D167FD1E5BBA2900A6F74D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D167FC1E5BBA2900A6F74D /* AppDelegate.swift */; };
+		F9D167FF1E5BBA2900A6F74D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D167FE1E5BBA2900A6F74D /* ViewController.swift */; };
+		F9D168021E5BBA2900A6F74D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9D168001E5BBA2900A6F74D /* Main.storyboard */; };
+		F9D168041E5BBA2900A6F74D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9D168031E5BBA2900A6F74D /* Assets.xcassets */; };
+		F9D168071E5BBA2900A6F74D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9D168051E5BBA2900A6F74D /* LaunchScreen.storyboard */; };
+		F9D168121E5BBA2900A6F74D /* Gu_eyedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D168111E5BBA2900A6F74D /* Gu_eyedTests.swift */; };
+		F9D1681D1E5BBA4200A6F74D /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9D1681C1E5BBA4200A6F74D /* opencv2.framework */; };
+		F9D168211E5BBA9100A6F74D /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9D1681F1E5BBA9100A6F74D /* AssetsLibrary.framework */; };
+		F9D168221E5BBA9100A6F74D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9D168201E5BBA9100A6F74D /* CoreGraphics.framework */; };
+		F9D168251E5BBB5F00A6F74D /* OpenCVWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = F9D168241E5BBB5F00A6F74D /* OpenCVWrapper.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F9D1680E1E5BBA2900A6F74D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F9D167F11E5BBA2900A6F74D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F9D167F81E5BBA2900A6F74D;
+			remoteInfo = "Gu-eyed";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F9D167F91E5BBA2900A6F74D /* Gu-eyed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gu-eyed.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9D167FC1E5BBA2900A6F74D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F9D167FE1E5BBA2900A6F74D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F9D168011E5BBA2900A6F74D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F9D168031E5BBA2900A6F74D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F9D168061E5BBA2900A6F74D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F9D168081E5BBA2900A6F74D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9D1680D1E5BBA2900A6F74D /* Gu-eyedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Gu-eyedTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9D168111E5BBA2900A6F74D /* Gu_eyedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gu_eyedTests.swift; sourceTree = "<group>"; };
+		F9D168131E5BBA2900A6F74D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9D1681C1E5BBA4200A6F74D /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
+		F9D1681F1E5BBA9100A6F74D /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		F9D168201E5BBA9100A6F74D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F9D168231E5BBB5400A6F74D /* OpenCVWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenCVWrapper.h; sourceTree = "<group>"; };
+		F9D168241E5BBB5F00A6F74D /* OpenCVWrapper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OpenCVWrapper.mm; sourceTree = "<group>"; };
+		F9D168261E5BBC9E00A6F74D /* BridgingHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F9D167F61E5BBA2900A6F74D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9D168211E5BBA9100A6F74D /* AssetsLibrary.framework in Frameworks */,
+				F9D168221E5BBA9100A6F74D /* CoreGraphics.framework in Frameworks */,
+				F9D1681D1E5BBA4200A6F74D /* opencv2.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9D1680A1E5BBA2900A6F74D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F9D167F01E5BBA2900A6F74D = {
+			isa = PBXGroup;
+			children = (
+				F9D167FB1E5BBA2900A6F74D /* Gu-eyed */,
+				F9D168101E5BBA2900A6F74D /* Gu-eyedTests */,
+				F9D167FA1E5BBA2900A6F74D /* Products */,
+				F9D1681E1E5BBA9100A6F74D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F9D167FA1E5BBA2900A6F74D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F9D167F91E5BBA2900A6F74D /* Gu-eyed.app */,
+				F9D1680D1E5BBA2900A6F74D /* Gu-eyedTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F9D167FB1E5BBA2900A6F74D /* Gu-eyed */ = {
+			isa = PBXGroup;
+			children = (
+				F9D167FC1E5BBA2900A6F74D /* AppDelegate.swift */,
+				F9D167FE1E5BBA2900A6F74D /* ViewController.swift */,
+				F9D168261E5BBC9E00A6F74D /* BridgingHeader.h */,
+				F9D168231E5BBB5400A6F74D /* OpenCVWrapper.h */,
+				F9D168241E5BBB5F00A6F74D /* OpenCVWrapper.mm */,
+				F9D168001E5BBA2900A6F74D /* Main.storyboard */,
+				F9D168031E5BBA2900A6F74D /* Assets.xcassets */,
+				F9D168051E5BBA2900A6F74D /* LaunchScreen.storyboard */,
+				F9D168081E5BBA2900A6F74D /* Info.plist */,
+			);
+			path = "Gu-eyed";
+			sourceTree = "<group>";
+		};
+		F9D168101E5BBA2900A6F74D /* Gu-eyedTests */ = {
+			isa = PBXGroup;
+			children = (
+				F9D168111E5BBA2900A6F74D /* Gu_eyedTests.swift */,
+				F9D168131E5BBA2900A6F74D /* Info.plist */,
+			);
+			path = "Gu-eyedTests";
+			sourceTree = "<group>";
+		};
+		F9D1681E1E5BBA9100A6F74D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F9D1681F1E5BBA9100A6F74D /* AssetsLibrary.framework */,
+				F9D168201E5BBA9100A6F74D /* CoreGraphics.framework */,
+				F9D1681C1E5BBA4200A6F74D /* opencv2.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F9D167F81E5BBA2900A6F74D /* Gu-eyed */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F9D168161E5BBA2900A6F74D /* Build configuration list for PBXNativeTarget "Gu-eyed" */;
+			buildPhases = (
+				F9D167F51E5BBA2900A6F74D /* Sources */,
+				F9D167F61E5BBA2900A6F74D /* Frameworks */,
+				F9D167F71E5BBA2900A6F74D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Gu-eyed";
+			productName = "Gu-eyed";
+			productReference = F9D167F91E5BBA2900A6F74D /* Gu-eyed.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F9D1680C1E5BBA2900A6F74D /* Gu-eyedTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F9D168191E5BBA2900A6F74D /* Build configuration list for PBXNativeTarget "Gu-eyedTests" */;
+			buildPhases = (
+				F9D168091E5BBA2900A6F74D /* Sources */,
+				F9D1680A1E5BBA2900A6F74D /* Frameworks */,
+				F9D1680B1E5BBA2900A6F74D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F9D1680F1E5BBA2900A6F74D /* PBXTargetDependency */,
+			);
+			name = "Gu-eyedTests";
+			productName = "Gu-eyedTests";
+			productReference = F9D1680D1E5BBA2900A6F74D /* Gu-eyedTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F9D167F11E5BBA2900A6F74D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Patrick Flanagan";
+				TargetAttributes = {
+					F9D167F81E5BBA2900A6F74D = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					F9D1680C1E5BBA2900A6F74D = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F9D167F81E5BBA2900A6F74D;
+					};
+				};
+			};
+			buildConfigurationList = F9D167F41E5BBA2900A6F74D /* Build configuration list for PBXProject "Gu-eyed" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F9D167F01E5BBA2900A6F74D;
+			productRefGroup = F9D167FA1E5BBA2900A6F74D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F9D167F81E5BBA2900A6F74D /* Gu-eyed */,
+				F9D1680C1E5BBA2900A6F74D /* Gu-eyedTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F9D167F71E5BBA2900A6F74D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9D168071E5BBA2900A6F74D /* LaunchScreen.storyboard in Resources */,
+				F9D168041E5BBA2900A6F74D /* Assets.xcassets in Resources */,
+				F9D168021E5BBA2900A6F74D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9D1680B1E5BBA2900A6F74D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F9D167F51E5BBA2900A6F74D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9D167FF1E5BBA2900A6F74D /* ViewController.swift in Sources */,
+				F9D167FD1E5BBA2900A6F74D /* AppDelegate.swift in Sources */,
+				F9D168251E5BBB5F00A6F74D /* OpenCVWrapper.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9D168091E5BBA2900A6F74D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9D168121E5BBA2900A6F74D /* Gu_eyedTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F9D1680F1E5BBA2900A6F74D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F9D167F81E5BBA2900A6F74D /* Gu-eyed */;
+			targetProxy = F9D1680E1E5BBA2900A6F74D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F9D168001E5BBA2900A6F74D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F9D168011E5BBA2900A6F74D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F9D168051E5BBA2900A6F74D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F9D168061E5BBA2900A6F74D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F9D168141E5BBA2900A6F74D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F9D168151E5BBA2900A6F74D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F9D168171E5BBA2900A6F74D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "Gu-eyed/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Ibotta.Gu-eyed";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Gu-eyed/BridgingHeader.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		F9D168181E5BBA2900A6F74D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "Gu-eyed/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Ibotta.Gu-eyed";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Gu-eyed/BridgingHeader.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		F9D1681A1E5BBA2900A6F74D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Gu-eyedTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Ibotta.Gu-eyedTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Gu-eyed.app/Gu-eyed";
+			};
+			name = Debug;
+		};
+		F9D1681B1E5BBA2900A6F74D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Gu-eyedTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Ibotta.Gu-eyedTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Gu-eyed.app/Gu-eyed";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F9D167F41E5BBA2900A6F74D /* Build configuration list for PBXProject "Gu-eyed" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9D168141E5BBA2900A6F74D /* Debug */,
+				F9D168151E5BBA2900A6F74D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F9D168161E5BBA2900A6F74D /* Build configuration list for PBXNativeTarget "Gu-eyed" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9D168171E5BBA2900A6F74D /* Debug */,
+				F9D168181E5BBA2900A6F74D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F9D168191E5BBA2900A6F74D /* Build configuration list for PBXNativeTarget "Gu-eyedTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9D1681A1E5BBA2900A6F74D /* Debug */,
+				F9D1681B1E5BBA2900A6F74D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F9D167F11E5BBA2900A6F74D /* Project object */;
+}
