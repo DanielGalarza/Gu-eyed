@@ -11,8 +11,9 @@
 @implementation FrameProcessor
 
 - (void)processFrame:(cv::Mat &)frame {
-    // example: make it gray
+    // Convert to grayscale for Canny.
     cv::cvtColor(frame, frame, cv::COLOR_BGRA2GRAY);
+    cv::Canny(frame, frame, 50, 150);
 }
 
 @end
