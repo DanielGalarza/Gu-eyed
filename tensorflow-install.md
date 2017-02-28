@@ -87,8 +87,7 @@ If you are still having issues with the build, visit the following two links
 
 For examples of how to build applications for iOS devices using TensorFlow see [tensorflow/contrib/ios_examples](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/contrib/ios_examples) 
 
-###For a detailed explanation on how to use the static library in a simple app visit  
-[Creating Your Own App](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/contrib/ios_examples#creating-your-own-app)
+### For a detailed explanation on how to use the static library in a simple app visit [Creating Your Own App](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/contrib/ios_examples#creating-your-own-app)
 
 
 ## Building the Examples
