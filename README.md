@@ -3,7 +3,8 @@
 A computer vision based guide for the blind.
 
 
-## Summary // Table of Contents
+
+## Summary
 
 * [Introduction](README.md)
 * [OpenCV Install](opencv-install.md)
