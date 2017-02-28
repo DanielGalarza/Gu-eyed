@@ -1,6 +1,6 @@
-##OpenCV Install
+##OpenCV Install for iOS
 
-### Installation Instructions
+### Instructions
 
 1. Download project.
 2. Go to http://opencv.org
