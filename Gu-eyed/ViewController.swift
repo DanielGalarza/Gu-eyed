@@ -10,7 +10,10 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    var imageView = UIImageView()
+    @IBOutlet weak var previewView: UIView!
+    let wrapper = OpenCVWrapper()
+    
+//    var imageView = UIImageView()
     var label = UILabel()
 
     override func viewDidLoad() {
@@ -22,5 +25,20 @@ class ViewController: UIViewController {
         label.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         label.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -10).isActive = true
     }
+    
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        wrapper.setTargetView(previewView);
+        wrapper.start();
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+
+
 }
 

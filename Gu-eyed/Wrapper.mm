@@ -1,29 +1,25 @@
-#include "OpenCVWrapper.h"
-//#import "UIImage+OpenCV.h"
+//
+//  Wrapper.m
+//  MinimumOpenCVLiveCamera
+//
+//  Created by Akira Iwaya on 2015/11/05.
+//  Copyright © 2015年 akira108. All rights reserved.
+//
 
+#import "Wrapper.h"
 #import "FrameProcessor.h"
 #import "VideoSource.h"
 
 #ifdef __cplusplus
 #include <opencv2/opencv.hpp>
-#include <opencv2/imgcodecs/ios.h>
 #endif
 
-using namespace cv;
-using namespace std;
-
-@interface OpenCVWrapper ()
+@interface Wrapper ()
 @property(nonatomic, strong)FrameProcessor *frameProcessor;
 @property(nonatomic, strong)VideoSource *videoSource;
 @end
 
-
-@implementation OpenCVWrapper
-
-+(NSString *) openCVVersionString {
-    return [NSString stringWithFormat:@"Open CV Version: %s", CV_VERSION];
-}
-
+@implementation Wrapper
 
 - (instancetype)init
 {

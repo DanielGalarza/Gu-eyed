@@ -7,13 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		145224121E6531C5002FB350 /* FrameProcessor.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1452240D1E6531C5002FB350 /* FrameProcessor.mm */; };
+		145224131E6531C5002FB350 /* VideoSource.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1452240F1E6531C5002FB350 /* VideoSource.mm */; };
+		145224161E653275002FB350 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 145224151E653275002FB350 /* AVFoundation.framework */; };
+		145224181E65327B002FB350 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 145224171E65327B002FB350 /* Accelerate.framework */; };
+		145224191E653284002FB350 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9D1681C1E5BBA4200A6F74D /* opencv2.framework */; };
+		1452241B1E653307002FB350 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1452241A1E653307002FB350 /* CoreMedia.framework */; };
 		F9D167FD1E5BBA2900A6F74D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D167FC1E5BBA2900A6F74D /* AppDelegate.swift */; };
 		F9D167FF1E5BBA2900A6F74D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D167FE1E5BBA2900A6F74D /* ViewController.swift */; };
 		F9D168021E5BBA2900A6F74D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9D168001E5BBA2900A6F74D /* Main.storyboard */; };
 		F9D168041E5BBA2900A6F74D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9D168031E5BBA2900A6F74D /* Assets.xcassets */; };
 		F9D168071E5BBA2900A6F74D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9D168051E5BBA2900A6F74D /* LaunchScreen.storyboard */; };
 		F9D168121E5BBA2900A6F74D /* Gu_eyedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D168111E5BBA2900A6F74D /* Gu_eyedTests.swift */; };
-		F9D1681D1E5BBA4200A6F74D /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9D1681C1E5BBA4200A6F74D /* opencv2.framework */; };
 		F9D168211E5BBA9100A6F74D /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9D1681F1E5BBA9100A6F74D /* AssetsLibrary.framework */; };
 		F9D168221E5BBA9100A6F74D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9D168201E5BBA9100A6F74D /* CoreGraphics.framework */; };
 		F9D168251E5BBB5F00A6F74D /* OpenCVWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = F9D168241E5BBB5F00A6F74D /* OpenCVWrapper.mm */; };
@@ -30,6 +35,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1452240C1E6531C5002FB350 /* FrameProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FrameProcessor.h; sourceTree = "<group>"; };
+		1452240D1E6531C5002FB350 /* FrameProcessor.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FrameProcessor.mm; sourceTree = "<group>"; };
+		1452240E1E6531C5002FB350 /* VideoSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoSource.h; sourceTree = "<group>"; };
+		1452240F1E6531C5002FB350 /* VideoSource.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VideoSource.mm; sourceTree = "<group>"; };
+		145224151E653275002FB350 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		145224171E65327B002FB350 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		1452241A1E653307002FB350 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		F9D167F91E5BBA2900A6F74D /* Gu-eyed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gu-eyed.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9D167FC1E5BBA2900A6F74D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F9D167FE1E5BBA2900A6F74D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -53,9 +65,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1452241B1E653307002FB350 /* CoreMedia.framework in Frameworks */,
+				145224191E653284002FB350 /* opencv2.framework in Frameworks */,
+				145224181E65327B002FB350 /* Accelerate.framework in Frameworks */,
+				145224161E653275002FB350 /* AVFoundation.framework in Frameworks */,
 				F9D168211E5BBA9100A6F74D /* AssetsLibrary.framework in Frameworks */,
 				F9D168221E5BBA9100A6F74D /* CoreGraphics.framework in Frameworks */,
-				F9D1681D1E5BBA4200A6F74D /* opencv2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,11 +106,15 @@
 		F9D167FB1E5BBA2900A6F74D /* Gu-eyed */ = {
 			isa = PBXGroup;
 			children = (
+				1452240C1E6531C5002FB350 /* FrameProcessor.h */,
+				1452240D1E6531C5002FB350 /* FrameProcessor.mm */,
+				1452240E1E6531C5002FB350 /* VideoSource.h */,
+				1452240F1E6531C5002FB350 /* VideoSource.mm */,
 				F9D167FC1E5BBA2900A6F74D /* AppDelegate.swift */,
-				F9D167FE1E5BBA2900A6F74D /* ViewController.swift */,
 				F9D168261E5BBC9E00A6F74D /* BridgingHeader.h */,
 				F9D168231E5BBB5400A6F74D /* OpenCVWrapper.h */,
 				F9D168241E5BBB5F00A6F74D /* OpenCVWrapper.mm */,
+				F9D167FE1E5BBA2900A6F74D /* ViewController.swift */,
 				F9D168001E5BBA2900A6F74D /* Main.storyboard */,
 				F9D168031E5BBA2900A6F74D /* Assets.xcassets */,
 				F9D168051E5BBA2900A6F74D /* LaunchScreen.storyboard */,
@@ -116,6 +135,9 @@
 		F9D1681E1E5BBA9100A6F74D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1452241A1E653307002FB350 /* CoreMedia.framework */,
+				145224171E65327B002FB350 /* Accelerate.framework */,
+				145224151E653275002FB350 /* AVFoundation.framework */,
 				F9D1681F1E5BBA9100A6F74D /* AssetsLibrary.framework */,
 				F9D168201E5BBA9100A6F74D /* CoreGraphics.framework */,
 				F9D1681C1E5BBA4200A6F74D /* opencv2.framework */,
@@ -173,6 +195,7 @@
 				TargetAttributes = {
 					F9D167F81E5BBA2900A6F74D = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = TGLV99M59R;
 						ProvisioningStyle = Automatic;
 					};
 					F9D1680C1E5BBA2900A6F74D = {
@@ -226,6 +249,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				145224131E6531C5002FB350 /* VideoSource.mm in Sources */,
+				145224121E6531C5002FB350 /* FrameProcessor.mm in Sources */,
 				F9D167FF1E5BBA2900A6F74D /* ViewController.swift in Sources */,
 				F9D167FD1E5BBA2900A6F74D /* AppDelegate.swift in Sources */,
 				F9D168251E5BBB5F00A6F74D /* OpenCVWrapper.mm in Sources */,
@@ -367,16 +392,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = TGLV99M59R;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = "Gu-eyed/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Ibotta.Gu-eyed";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Gu-eyed/BridgingHeader.h";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -384,16 +412,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = TGLV99M59R;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = "Gu-eyed/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Ibotta.Gu-eyed";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Gu-eyed/BridgingHeader.h";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -444,6 +475,7 @@
 				F9D168181E5BBA2900A6F74D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F9D168191E5BBA2900A6F74D /* Build configuration list for PBXNativeTarget "Gu-eyedTests" */ = {
 			isa = XCConfigurationList;
@@ -452,6 +484,7 @@
 				F9D1681B1E5BBA2900A6F74D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
