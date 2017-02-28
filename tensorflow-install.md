@@ -69,13 +69,13 @@ sign of success, the program is not a complete iOS app.
 
 ### Troubleshooting the build:
 
-_If `build_all_ios.sh` script immediately fails with the with the following error_
+If `build_all_ios.sh` script immediately fails with the with the following error
 ```
 xcrun: xcode tensorflow error: SDK "iphoneos" cannot be located
 xcrun: error: SDK "iphoneos" cannot be located
 xcrun: error: unable to lookup item 'PlatformPath' in SDK 'iphoneos'
 ```
-_The solution is to reset xcode using the following command_
+The solution is to reset xcode using the following command
 ```bash
 sudo xcode-select --reset
 ```
@@ -85,10 +85,9 @@ If you are still having issues with the build, visit the following two links
 * [iOS Troubleshooting Checklist](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/contrib/ios_examples#troubleshooting)
 
 
+For examples of how to build applications for iOS devices using TensorFlow see [tensorflow/contrib/ios_examples](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/contrib/ios_examples) 
 
-To see TensorFlow running on iOS, the example Xcode project in
-[tensorflow/contrib/ios_examples](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/contrib/ios_examples) shows how to use the static
-library in a simple app.
+**For a detailed rundown on how to use the static library in a simple app visit**  [Creating Your Own App](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/contrib/ios_examples#creating-your-own-app)
 
 
 ## Building the Examples
@@ -115,7 +114,7 @@ cp ~/graphs/inception5h/* tensorflow/contrib/ios_examples/simple/data/
 ```
 
 
-**For more information using TensorFlow with iOS devices** please see official [TensorFlow iOS Examples](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/contrib/ios_examples)
+**For more information about using TensorFlow with iOS devices** please see official [TensorFlow iOS Examples](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/contrib/ios_examples)
 
 
 
