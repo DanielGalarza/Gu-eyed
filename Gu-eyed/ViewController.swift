@@ -15,21 +15,21 @@ class ViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        
-        
         guard UIImagePickerController.isSourceTypeAvailable(.camera) else {
-            let errorLabel = UILabel()
-            errorLabel.text = "No camera...😱"
-            errorLabel.font = UIFont.systemFont(ofSize: 30)
-            errorLabel.sizeToFit()
-            errorLabel.textColor = UIColor.white
-            errorLabel.center = view.center
-            view.addSubview(errorLabel)
-//            view.bringSubview(toFront: errorLabel)
-            
+            addErrorMessage()
             return
         }
         wrapper.setTargetView(view);
         wrapper.start();
+    }
+    
+    private func addErrorMessage() {
+        let errorLabel = UILabel()
+        errorLabel.text = "No camera...😱"
+        errorLabel.font = UIFont.systemFont(ofSize: 30)
+        errorLabel.sizeToFit()
+        errorLabel.textColor = UIColor.white
+        errorLabel.center = view.center
+        view.addSubview(errorLabel)
     }
 }
