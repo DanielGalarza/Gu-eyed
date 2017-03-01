@@ -10,35 +10,25 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    @IBOutlet weak var previewView: UIView!
-    let wrapper = OpenCVWrapper()
-    
-//    var imageView = UIImageView()
-    var label = UILabel()
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        label.text = OpenCVWrapper.openCVVersionString()
-        label.translatesAutoresizingMaskIntoConstraints = false
-        view.addSubview(label)
-        label.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        label.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -10).isActive = true
-    }
-    
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        wrapper.setTargetView(previewView);
+        let wrapper = OpenCVWrapper()
+        
+        guard UIImagePickerController.isSourceTypeAvailable(.camera) else {
+            let errorLabel = UILabel()
+            errorLabel.text = "No camera...😱"
+            errorLabel.font = UIFont.systemFont(ofSize: 30)
+            errorLabel.sizeToFit()
+            errorLabel.textColor = UIColor.white
+            errorLabel.center = view.center
+            view.addSubview(errorLabel)
+//            view.bringSubview(toFront: errorLabel)
+            
+            return
+        }
+        wrapper.setTargetView(view);
         wrapper.start();
     }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
 }
-

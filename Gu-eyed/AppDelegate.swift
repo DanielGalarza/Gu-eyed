@@ -13,9 +13,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
+    private func setupInitialView() {
+        let initialView = ViewController()
+        
+        let frame = UIScreen.main.bounds
+        window = UIWindow(frame: frame)
+        
+        guard let window = window else { return }
+        window.rootViewController = initialView
+        window.makeKeyAndVisible()
+    }
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        setupInitialView()
         return true
     }
 
