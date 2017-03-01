@@ -10,11 +10,12 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    let wrapper = OpenCVWrapper()
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        let wrapper = OpenCVWrapper()
+        
         
         guard UIImagePickerController.isSourceTypeAvailable(.camera) else {
             let errorLabel = UILabel()
