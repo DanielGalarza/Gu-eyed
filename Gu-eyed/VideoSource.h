@@ -16,6 +16,7 @@
 @protocol VideoSourceDelegate<NSObject>
 
 - (void)processFrame:(cv::Mat &)frame;
+- (void)houghTransformProcessFrame:(cv::Mat &)frame;
 
 @end
 

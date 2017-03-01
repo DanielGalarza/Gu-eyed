@@ -195,7 +195,7 @@
 				TargetAttributes = {
 					F9D167F81E5BBA2900A6F74D = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = TGLV99M59R;
+						DevelopmentTeam = 3ZTR74WEAF;
 						ProvisioningStyle = Automatic;
 					};
 					F9D1680C1E5BBA2900A6F74D = {
@@ -392,15 +392,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = TGLV99M59R;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 3ZTR74WEAF;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = "Gu-eyed/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Ibotta.Gu-eyed";
+				PRODUCT_BUNDLE_IDENTIFIER = Daniel.gEyed;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Gu-eyed/BridgingHeader.h";
 				SWIFT_VERSION = 3.0;
@@ -412,15 +413,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = TGLV99M59R;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 3ZTR74WEAF;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = "Gu-eyed/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Ibotta.Gu-eyed";
+				PRODUCT_BUNDLE_IDENTIFIER = Daniel.gEyed;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Gu-eyed/BridgingHeader.h";
 				SWIFT_VERSION = 3.0;
