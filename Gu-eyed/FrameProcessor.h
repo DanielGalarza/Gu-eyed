@@ -15,7 +15,9 @@
 
 @interface FrameProcessor : NSObject<VideoSourceDelegate>
 
-- (void)processFrame:(cv::Mat &)frame;
+- (void)cannyProcessFrame:(cv::Mat &)frame;
 - (void)houghTransformProcessFrame:(cv::Mat &)frame;
+- (void)houghTransformProbabilityProcessFrame:(cv::Mat &)frame;
+
 
 @end

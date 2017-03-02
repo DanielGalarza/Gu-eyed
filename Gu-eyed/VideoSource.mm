@@ -72,7 +72,7 @@ using namespace std;
     Mat mat = Mat(height, width, CV_8UC4, base);
     
     //Processing here
-    [self.delegate houghTransformProcessFrame:mat];
+    [self.delegate houghTransformProbabilityProcessFrame:mat];
     
     CGImageRef imageRef = [self CGImageFromCVMat:mat];
     dispatch_sync(dispatch_get_main_queue(), ^{
